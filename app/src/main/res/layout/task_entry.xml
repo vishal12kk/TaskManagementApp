@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="select date"
+        android:layout_marginTop="20dp"
+        android:id="@+id/h1"
+        android:textStyle="bold"
+        android:layout_below="@+id/main_head"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Add New Task"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+
+        android:paddingBottom="10dp"
+
+     android:layout_alignParentTop="true"
+        android:id="@+id/main_head"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Task title"
+        android:id="@+id/h2"
+        android:layout_below="@id/h1"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Task Decsription"
+        android:id="@+id/h3"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/title_"
+
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:id="@+id/title_"
+        android:layout_below="@+id/h2"
+        android:maxLines="10"
+
+
+       />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:maxLines="10"
+
+        android:id="@+id/title_desc"
+        android:layout_below="@+id/h3"
+
+
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_toRightOf="@+id/h1"
+        android:layout_toEndOf="@id/h1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#00000000"
+        android:src="@drawable/ic_mode_edit_24dp"
+        android:layout_below="@id/main_head"
+
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButton"
+        android:text="Add Task"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+      android:layout_below="@+id/title_desc"
+android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelButton"
+        android:text="cancel"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:background="@color/year"
+       android:layout_below="@+id/addButton" />
+
+
+</RelativeLayout>
